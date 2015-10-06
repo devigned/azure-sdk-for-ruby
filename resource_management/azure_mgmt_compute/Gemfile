@@ -10,6 +10,8 @@ group :development do
   gem 'azure_mgmt_resources', path: '../azure_mgmt_resources'
   gem 'azure_mgmt_storage', path: '../azure_mgmt_storage'
   gem 'azure_mgmt_network', path: '../azure_mgmt_network'
+  gem 'rake', '~> 10'
+  gem 'dotenv', '~> 2'
 end
 
 group :test do

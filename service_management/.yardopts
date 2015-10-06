@@ -1,0 +1,8 @@
+--readme README.md
+--title 'Azure SDK for Ruby Documentation'
+--charset utf-8
+--markup markdown
+'azure/lib/**/*.rb'
+'azure/bin/*.rb'
+-
+'./*/README.md'

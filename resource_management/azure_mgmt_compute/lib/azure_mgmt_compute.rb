@@ -22,6 +22,7 @@ require 'ms_rest_azure'
 require 'azure_mgmt_compute/module_definition'
 require 'azure_mgmt_compute/version'
 
+# {include:file:../README.md}
 module Azure::ARM::Compute
   autoload :AvailabilitySets,                                   'azure_mgmt_compute/availability_sets.rb'
   autoload :VirtualMachineImages,                               'azure_mgmt_compute/virtual_machine_images.rb'

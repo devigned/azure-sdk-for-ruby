@@ -12,18 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #--------------------------------------------------------------------------
-require 'rspec/core/rake_task'
-require 'dotenv/tasks'
 require 'open3'
-require '../tasks/shell'
+require 'shell'
+require 'tasks/loader'
 
-include Shell
-
-task :test => :dotenv do
-  each_child do
-    execute_and_stream('bundle install')
-    execute_and_stream('bundle exec rspec')
-  end
-end
-
-task :default => :test
+include TaskLoader
+load_tasks
